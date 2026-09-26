@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carlendar – Your car's maintenance calendar</title>
+<meta name="description" content="Carlendar is a car maintenance app in development: your maintenance schedule, the specs to do it yourself, and a log of what you've spent.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Public+Sans:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --paper: #F3F0E8;
+    --card: #FFFFFF;
+    --ink: #1A1C1E;
+    --muted: #5C5F62;
+    --line: #E2DDD2;
+    --slate: #1E2A33;
+    --accent: #B8431A;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'Public Sans', system-ui, sans-serif;
+    line-height: 1.55;
+  }
+  main { max-width: 880px; margin: 0 auto; padding: 48px 20px 64px; }
+  .brand { display: flex; align-items: center; gap: 10px; color: var(--accent); }
+  .brand span { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; font-size: 30px; color: var(--ink); }
+  .status {
+    display: inline-block; margin-top: 40px; padding: 4px 12px; border-radius: 999px;
+    background: #FBEEE8; color: #8E3312; font-size: 13px; font-weight: 600;
+  }
+  h1 {
+    margin: 14px 0 12px; font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+    font-size: clamp(40px, 8vw, 64px); line-height: 1.02;
+  }
+  .lede { max-width: 600px; margin: 0; font-size: 18px; color: var(--muted); }
+  .features {
+    display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 12px; margin-top: 44px;
+  }
+  .feature { padding: 20px; background: var(--card); border: 1px solid var(--line); border-radius: 18px; }
+  .feature h2 { margin: 10px 0 6px; font-family: 'Barlow Condensed', sans-serif; font-size: 22px; }
+  .feature p { margin: 0; color: var(--muted); font-size: 15px; }
+  .feature svg { color: var(--accent); }
+  .band {
+    margin-top: 28px; padding: 22px 24px; background: var(--slate); color: #F3F0E8;
+    border-radius: 18px; font-size: 16px;
+  }
+  .band strong { font-family: 'Barlow Condensed', sans-serif; font-size: 20px; letter-spacing: .2px; }
+  footer { margin-top: 48px; color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/><path d="M9 15.5l2 2 4-4"/></svg>
+    <span>Carlendar</span>
+  </div>
+
+  <div class="status">In development</div>
+  <h1>Your car's maintenance calendar.</h1>
+  <p class="lede">Enter your VIN. Get your maintenance schedule, the specs and parts to do the work yourself, and a clear record of everything you've done and spent.</p>
+
+  <section class="features" aria-label="Features">
+    <div class="feature">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+      <h2>Know what's due</h2>
+      <p>Due, due soon and overdue at a glance, by miles or by date, whichever comes first.</p>
+    </div>
+    <div class="feature">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2.7s6 6.3 6 11.3a6 6 0 0 1-12 0c0-5 6-11.3 6-11.3z"/></svg>
+      <h2>Do it yourself</h2>
+      <p>Fluid types, filters and specs for your vehicle, with every value clearly marked as verified or not.</p>
+    </div>
+    <div class="feature">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14v18l-3-2-2 2-2-2-2 2-2-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg>
+      <h2>Track every dollar</h2>
+      <p>A service log with receipts, spending by category and cost per mile.</p>
+    </div>
+  </section>
+
+  <div class="band"><strong>Built for DIYers, truck owners and anyone who wants to keep their vehicle running for the long haul.</strong></div>
+
+  <footer>© 2026 Carlendar</footer>
+</main>
+</body>
+</html>
