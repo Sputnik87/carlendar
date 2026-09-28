@@ -74,7 +74,7 @@
   <p>We use a small number of service providers. They process data only to provide their service to us:</p>
   <ul>
     <li><strong>Supabase</strong> hosts our database, sign-in and photo storage (on Amazon Web Services data centers).</li>
-    <li><strong>GitHub</strong> stores our encrypted nightly backups, which are kept for 90 days.</li>
+    <li><strong>GitHub</strong> runs our nightly backup job, and <strong>Cloudflare</strong> stores the encrypted backups. Nightly database copies are kept for 90 days; photos you delete are removed from the backups 90 days later.</li>
     <li><strong>Email delivery</strong> for sign-in codes (currently Supabase's email service).</li>
     <li><strong>NHTSA</strong> (U.S. National Highway Traffic Safety Administration): when you look up a VIN, the VIN is sent to NHTSA's free vehicle database to get the vehicle's details. No other information is sent.</li>
   </ul>
